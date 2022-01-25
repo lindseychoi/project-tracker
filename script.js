@@ -12,3 +12,7 @@ $(document).ready(function(){
     update();
     setInterval(update, 1000);
 });
+
+$('modal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  });
